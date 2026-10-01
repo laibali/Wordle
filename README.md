@@ -1,4 +1,4 @@
-Wordle
+## Wordle
 A recreation of the Wordle web game built with React. This project started as a way for me to refresh on React by initially coding the game in Python (wordle.py) and then implementing that same logic in Reacy.
 
 ## Play the Game
