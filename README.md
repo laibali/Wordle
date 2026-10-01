@@ -1,16 +1,53 @@
-# React + Vite
+Wordle
+A recreation of the Wordle web game built with React. This project started as a way for me to refresh on React by initially coding the game in Python (wordle.py) and then implementing that same logic in Reacy.
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+## Play the Game
+**[Play Wordle](https://laibali.github.io/Wordle/)**
 
-Currently, two official plugins are available:
+## Features
+* 6 attempts to guess a 5-letter word
+* On-screen and physical keyboard support
+* Letter feedback based on Wordle's rules
+* Handles duplicate letters correctly
+* Visual keyboard feedback for previously guessed letters
+* Reset/new game functionality
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Tech Stack
+* **React**
+* **JavaScript**
+* **Vite**
+* **CSS**
+* **GitHub Pages**
 
-## React Compiler
+## What I Learned
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+I built this project to relearn React from the ground up. I started with a Python version of Wordle and then recreated it as a web application.
+Through the project, I learned how to work with:
+* React state and `useState`
+* `useEffect` and keyboard event listeners
+* Event handling
+* Conditional rendering
+* Managing game state across multiple components
+* Handling duplicate letters in word comparisons
+* Deploying a React application with GitHub Pages
 
-## Expanding the Oxlint configuration
+One of the more challenging parts was implementing keyboard controls while keeping React state and event listeners synchronized. Working through that issue helped me better understand how React's state and effects interact.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Running Locally
+Clone the repository and install the dependencies:
+```bash
+git clone https://github.com/laibali/Wordle.git
+cd Wordle
+npm install
+npm run build
+npm run dev
+```
+
+Then open the local URL provided by Vite in your browser.
+
+## Future Improvements
+* Add statistics for wins, losses, and guess distribution
+* Add a share-results feature
+* Add animations and additional visual feedback
+* Add difficulty or custom game modes
+* Add word validity check
